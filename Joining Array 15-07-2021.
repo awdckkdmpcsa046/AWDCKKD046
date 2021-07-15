@@ -1,0 +1,31 @@
+import java.util.*;
+class Assign1
+{
+public static void main(String[] args)
+{
+ArrayList<Integer> a=new ArrayList<Integer>();
+ArrayList<Integer> a1=new ArrayList<Integer>();
+ArrayList<Integer> b=new ArrayList<Integer>();
+a.add(10);
+a.add(20);
+a.add(30);
+a.add(40);
+System.out.println("First array:" +a);
+a1.add(100);
+a1.add(90);
+a1.add(80);
+a1.add(60);
+System.out.println("Second array:" +a1);
+b.addAll(a);
+b.addAll(a1);
+Collections.sort(b);
+System.out.println( "Final List:" +b);
+}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OUTPUT:
+C:\Users\hp>javac Assign1.java
+C:\Users\hp>java Assign1
+First array:[10, 20, 30, 40]
+Second array:[100, 90, 80, 60]
+Final List:[10, 20, 30, 40, 60, 80, 90, 100]
